@@ -8,7 +8,6 @@ drawings:
   persist: false
 transition: slide-left
 title: 2次方程式の解法
-hideInToc: false
 ---
 
 # 2次方程式の解法マスターガイド
