@@ -2,6 +2,9 @@
 theme: seriph
 background: https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
 class: text-center
+# colorSchema options:
+# colorSchema: light
+colorSchema: dark
 highlighter: shiki
 lineNumbers: true
 drawings:
