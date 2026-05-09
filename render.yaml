@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: lecture-math-004
+    env: static
+    buildCommand: npm ci --include=optional; npm run build
+    staticPublishPath: dist

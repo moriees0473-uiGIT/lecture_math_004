@@ -1,4 +1,11 @@
 {
+  "name": "lecture_math_004",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "build:render": "slidev build --out dist"
+  },
   "dependencies": {
     "@slidev/cli": "^0.49.29",
     "@slidev/theme-seriph": "^0.25.0"
