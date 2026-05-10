@@ -1,0 +1,125 @@
+/* dark モード時だけ見出し色を変更 */
+html.dark .slidev-layout h1 {
+  color: #7dd3fc; /* # タイトル */
+}
+
+html.dark .slidev-layout h2 {
+  color: #d5e2f0; /* ## タイトル */
+}
+
+html.dark .slidev-layout h3 {
+  color: #c4b5fd; /* ### タイトル */
+}
+
+/* 見出し直後の段落 - 各レベルで異なる色で識別可能に */
+/* h1 + p = 赤 */
+html.dark .slidev-layout h1 + p {
+  opacity: 1 !important;
+  color: #f8d4d4;
+}
+
+/* h2 + p = 青 */
+html.dark .slidev-layout h2 + p {
+  opacity: 1 !important;
+  color: #4da6ff;
+}
+
+/* h3 + p = 黄色 */
+html.dark .slidev-layout h3 + p {
+  opacity: 1 !important;
+  color: #ffd700;
+}
+
+/* 全ページの本文を2回り大きくする */
+.slidev-layout p {
+  font-size: 1.5rem;
+}
+
+/* 箇条書き（ul/ol）のテキストサイズも2回り大きくする */
+.slidev-layout ul,
+.slidev-layout ol {
+  font-size: 1.5rem;
+}
+
+.slidev-layout li {
+  font-size: 1.5rem;
+}
+
+/* Reusable speech bubbles */
+.speech-row {
+  display: flex;
+  width: 100%;
+  margin: 0.6rem 0;
+}
+
+.speech-row--left {
+  justify-content: flex-start;
+}
+
+.speech-row--right {
+  justify-content: flex-end;
+}
+
+.speech-bubble {
+  --bubble-bg: #fff8dc;
+  --bubble-fg: #1f2937;
+  --bubble-border: #374151;
+  --bubble-tail-x: 26px;
+  position: relative;
+  display: inline-block;
+  max-width: min(78%, 920px);
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--bubble-border);
+  border-radius: 14px;
+  background: var(--bubble-bg);
+  color: var(--bubble-fg);
+  line-height: 1.5;
+}
+
+.speech-bubble::before,
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.speech-bubble::before {
+  left: var(--bubble-tail-x);
+  bottom: -16px;
+  border-width: 10px 10px 0;
+  border-color: var(--bubble-border) transparent transparent;
+}
+
+.speech-bubble::after {
+  left: calc(var(--bubble-tail-x) + 1px);
+  bottom: -13px;
+  border-width: 9px 9px 0;
+  border-color: var(--bubble-bg) transparent transparent;
+}
+
+.speech-bubble--right {
+  --bubble-tail-x: calc(100% - 46px);
+}
+
+/* Teacher style */
+.speech-bubble--teacher {
+  --bubble-bg: #eef6ff;
+  --bubble-fg: #0f172a;
+  --bubble-border: #3b82f6;
+}
+
+/* Student style */
+.speech-bubble--student {
+  --bubble-bg: #f0fdf4;
+  --bubble-fg: #052e16;
+  --bubble-border: #22c55e;
+}
+
+/* Emphasis style */
+.speech-bubble--alert {
+  --bubble-bg: #fff1f2;
+  --bubble-fg: #4c0519;
+  --bubble-border: #fb7185;
+}

@@ -1,6 +1,7 @@
 ---
 theme: seriph
-background: https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
+# background: https://images.pexels.com/photos/6238050/pexels-photo-6238050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920
+background: bg.png
 class: text-center
 # colorSchema options:
 # colorSchema: light
@@ -10,57 +11,127 @@ lineNumbers: true
 drawings:
   persist: false
 transition: slide-left
-title: 2次方程式の解法
+title: 二次方程式の解法
 ---
+# 第４回 二次方程式③
 
-# 2次方程式の解法マスターガイド
+平方完成・解の公式
 
-基礎から解の公式まで
-
-講義を開始する
+2026/5/13
 
 ---
 layout: default
 ---
 
-# 本日のゴール
+# 本日のテーマ
 
-2次方程式を解くための「3つの武器」を習得しましょう。
-
-1. **因数分解**：最も効率的な「基本の剣」
-2. **平方根の考え方**：理屈で攻める「論理の杖」
-3. **解の公式**：どんな敵も倒せる「伝説の盾」
-
----
-layout: section
----
-
-# 1. 2次方程式の定義
-
-まずは敵の姿を知る
-
----
-
-# 2次方程式の一般形
-
-すべての2次方程式は、整理すると以下の形になります。
+<div class="ml-4 text-3xl space-y-4">
+  <div>1. 平方完成：completing the square</div>
 
 $$
-ax^2 + bx + c = 0
+x^2 + \color{ff6b6b}b\color{ffffff}x　　 \rightarrow　　 \left( x + \frac{\color{ff6b6b}b}{2} \right)^2 - \left( \frac{\color{ff6b6b}b}{2} \right)^2
 $$
 
-### 重要なルール
+  <div>2. 解の公式：quadratic formula</div>
 
-* **$a, b, c$** は定数（決まった数字）
-* **$a \neq 0$** であること（$a=0$だと1次方程式になってしまうため）
+$$
+x^2 + (\color{ff6b6b}p\color{ffffff}+\color{6bb6ff}q\color{ffffff})x + \color{ff6b6b}p\color{6bb6ff}q \color{ffffff}= 0　　\rightarrow　　(x+\color{ff6b6b}p\color{ffffff})(x+\color{6bb6ff}q\color{ffffff}) = 0
+$$
+
+$$
+x^2 + 2\color{ff6b6b}b\color{ffffff}x + \color{ff6b6b}b\color{ffffff}^2 = 0　　\rightarrow　　(x+\color{ff6b6b}b\color{ffffff})^2 = 0
+$$
+
+$$
+x^2 - 2\color{ff6b6b}b\color{ffffff}x +\color{ff6b6b} b\color{ffffff}^2 = 0　　\rightarrow　　(x-\color{ff6b6b}b\color{ffffff})^2 = 0
+$$
+
+
+</div>
 
 ---
-layout: two-cols
+layout: default
 ---
 
-# 2. 因数分解による解法
+# <ruby>平方完成<rt>へいほう かんせい</rt></ruby>の考え方 <SpeechLine text="completing the square" lang="en-US" />
 
-「かけて$c$、たして$b$」になる2数を見つける方法です。
+二次方程式を<ruby>解<rt>と</rt></ruby>いたり、<ruby>関数<rt>かんすう</rt></ruby>のグラフを考えたりする<ruby>際<rt>さい</rt></ruby>に、<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>重要<rt>じゅうよう</rt></ruby>なステップです。
+<br>
+
+$$
+x^2 + bx \rightarrow \left( x + \frac{b}{2} \right)^2 - \left( \frac{b}{2} \right)^2
+$$
+
+<!-- v-click -->
+$$\color{#6bb6ff}{x² + bx} $$
+
+<div class="mt-14 flex items-center justify-center gap-4 text-3xl">
+  <v-click>
+
+$$ x² + bx \rightarrow $$
+
+  </v-click>
+  <v-click>
+
+$$ \left( x + \frac{b}{2} \right)^2 $$
+
+  </v-click>
+  <v-click>
+
+$$ \left( x + \frac{b}{2} \right)^2 $$
+
+   </v-click>
+  <v-click>
+
+$$ - \left( \frac{b}{2} \right)^2 $$
+
+   </v-click>
+</div>
+
+赤（例：強調部分）：#ff6b6b
+青（例：bの2乗の部分など）：#6bb6ff
+白（式のマイナス記号など、背景が暗い場合）：#ffffff
+「Slidevのslides.md の5ページ目（平方完成の考え方）のみを修正したいです。
+現在：layout: two-cols で左側が黒くなっている
+希望：layout: default に変更して、v-click で→キーステップ実行の水平配置式」
+
+---
+layout: default
+---
+
+<div class="mt-14 flex items-center justify-center gap-4 text-3xl">
+  <v-click class="text-[#ff6b6b]">x² + bx</v-click>
+  <v-click class="text-white">→</v-click>
+  <v-click>
+    <span class="text-[#ff6b6b]">
+      (x +
+      <span class="mx-1 inline-flex flex-col items-center align-middle leading-none">
+        <span class="border-b border-current px-1 text-[0.55em]">b</span>
+        <span class="px-1 text-[0.55em]">2</span>
+      </span>
+      )²
+    </span>
+    <span class="text-white"> - </span>
+    <span class="text-[#6bb6ff]">
+      (
+      <span class="mx-1 inline-flex flex-col items-center align-middle leading-none">
+        <span class="border-b border-current px-1 text-[0.55em]">b</span>
+        <span class="px-1 text-[0.55em]">2</span>
+      </span>
+      )²
+    </span>
+  </v-click>
+</div>
+
+$$
+x^2 + bx \rightarrow \left( x + \frac{b}{2} \right)^2 - \left( \frac{b}{2} \right)^2
+$$
+
+<p class="mt-8 text-center">平方完成の変形をクリックで順に確認しましょう。</p>
+
+---
+layout: default
+---
 
 $$
 x^2 + (p+q)x + pq = 0
