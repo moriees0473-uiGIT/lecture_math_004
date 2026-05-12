@@ -21,3 +21,5 @@ npx slidev
 # npm run serve
 
 # npm ci --include=optional && npm run build:render
+
+# $$　\color{808080}\Rightarrow \color{ffffff}\left(x^2 + \color{ff6b6b}6\color{ffffff}x +\frac{\color{ff6b6b}6\times6}{2\times2}\right) - \left( \frac{\color{ff6b6b}6\times6}{2\times2} \right)+5 = 0 $$

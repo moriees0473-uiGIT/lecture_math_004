@@ -123,3 +123,14 @@ html.dark .slidev-layout h3 + p {
   --bubble-fg: #4c0519;
   --bubble-border: #fb7185;
 }
+
+/* 選択肢表示用クラス */
+.choice-label {
+  font-size: 2.25rem; /* text-4xl */
+  color: gray;
+}
+
+.choice-item {
+  font-size: 2.25rem; /* text-4xl */
+  margin-left: 1.25rem; /* ml-5 */
+}

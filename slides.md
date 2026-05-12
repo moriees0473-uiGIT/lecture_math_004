@@ -26,13 +26,22 @@ layout: default
 # 本日のテーマ
 
 <div class="ml-4 text-3xl space-y-4">
-  <div>1. 平方完成：completing the square</div>
+  <div class="flex items-center gap-2">
+    1. <ruby>平方完成<rt>へいほう かんせい</rt></ruby>：
+    <SpeechLine text="completing the square" lang="en-US" />
+  </div>
+  <div class="ml-6 text-2xl text-gray-400">
+    <ruby>二次方程式<rt>にじ　　ほうていしき</rt></ruby>を<ruby>解<rt>と</rt></ruby>いたり、<ruby>関数<rt>かんすう</rt></ruby>のグラフを考えたりする<ruby>際<rt>さい</rt></ruby>に、<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>重要<rt>じゅうよう</rt></ruby>なステップです。
+  </div>
 
 $$
-x^2 + \color{ff6b6b}b\color{ffffff}x　　 \rightarrow　　 \left( x + \frac{\color{ff6b6b}b}{2} \right)^2 - \left( \frac{\color{ff6b6b}b}{2} \right)^2
+x^2 + \color{ff6b6b}b\color{ffffff}x+\color{6bb6ff}c　　 \color{ffffff}\rightarrow　　 \left( x + \frac{\color{ff6b6b}b}{2} \right)^2 - \left( \frac{\color{ff6b6b}b}{2} \right)^2+\color{6bb6ff}c
 $$
 
-  <div>2. 解の公式：quadratic formula</div>
+  <div class="flex items-center gap-2">
+    2. <ruby>解の公式<rt>かい　こうしき</rt></ruby>：
+    <SpeechLine text="quadratic formula" lang="en-US" />
+  </div>
 
 $$
 x^2 + (\color{ff6b6b}p\color{ffffff}+\color{6bb6ff}q\color{ffffff})x + \color{ff6b6b}p\color{6bb6ff}q \color{ffffff}= 0　　\rightarrow　　(x+\color{ff6b6b}p\color{ffffff})(x+\color{6bb6ff}q\color{ffffff}) = 0
@@ -46,88 +55,135 @@ $$
 x^2 - 2\color{ff6b6b}b\color{ffffff}x +\color{ff6b6b} b\color{ffffff}^2 = 0　　\rightarrow　　(x-\color{ff6b6b}b\color{ffffff})^2 = 0
 $$
 
-
 </div>
 
 ---
-layout: default
+layout: two-cols-header
 ---
 
-# <ruby>平方完成<rt>へいほう かんせい</rt></ruby>の考え方 <SpeechLine text="completing the square" lang="en-US" />
+<div class="flex items-center gap-4  text-4xl -mt-10">
+  例：
 
-二次方程式を<ruby>解<rt>と</rt></ruby>いたり、<ruby>関数<rt>かんすう</rt></ruby>のグラフを考えたりする<ruby>際<rt>さい</rt></ruby>に、<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>重要<rt>じゅうよう</rt></ruby>なステップです。
-<br>
+$$ \large x^2 + \color{ff6b6b}6\color{ffffff}x+\color{6bb6ff}5\color{ffffff} = 0 $$
 
-$$
-x^2 + bx \rightarrow \left( x + \frac{b}{2} \right)^2 - \left( \frac{b}{2} \right)^2
-$$
+</div>
 
-<!-- v-click -->
-$$\color{#6bb6ff}{x² + bx} $$
-
-<div class="mt-14 flex items-center justify-center gap-4 text-3xl">
+::left::
+<div class="-mt-40"> 
   <v-click>
 
-$$ x² + bx \rightarrow $$
+$$　\color{808080}\Rightarrow \color{ffffff}\left( x + \frac{\color{ff6b6b}6}{2} \right)^2 - \left( \frac{\color{ff6b6b}6}{2} \right)^2+\color{6bb6ff}5\color{ffffff} = 0 $$
 
   </v-click>
   <v-click>
 
-$$ \left( x + \frac{b}{2} \right)^2 $$
-
-  </v-click>
-  <v-click>
-
-$$ \left( x + \frac{b}{2} \right)^2 $$
+$$ \color{808080}\Rightarrow \color{ffffff}\left( x + \color{ff6b6b}3\color{ffffff}\right)^2  - \left(\color{ff6b6b}3\color{ffffff}\right)^2 + \color{6bb6ff}5\color{ffffff} = 0 $$
 
    </v-click>
   <v-click>
 
-$$ - \left( \frac{b}{2} \right)^2 $$
+$$ \color{808080}\Rightarrow \color{ffffff}\left( x + \color{ff6b6b}3\color{ffffff}\right)^2  - \color{ff6b6b}9\color{ffffff} + \color{6bb6ff}5\color{ffffff} = 0 $$
 
    </v-click>
+  <v-click>
+
+$$ \color{808080}\Rightarrow \color{ffffff}\left( x + \color{ff6b6b}3\color{ffffff}\right)^2  = 4 $$
+
+   </v-click>
+
 </div>
 
-赤（例：強調部分）：#ff6b6b
-青（例：bの2乗の部分など）：#6bb6ff
-白（式のマイナス記号など、背景が暗い場合）：#ffffff
-「Slidevのslides.md の5ページ目（平方完成の考え方）のみを修正したいです。
-現在：layout: two-cols で左側が黒くなっている
-希望：layout: default に変更して、v-click で→キーステップ実行の水平配置式」
-
----
-layout: default
----
-
-<div class="mt-14 flex items-center justify-center gap-4 text-3xl">
-  <v-click class="text-[#ff6b6b]">x² + bx</v-click>
-  <v-click class="text-white">→</v-click>
+::right::
+<div class="-mt-40"> 
   <v-click>
-    <span class="text-[#ff6b6b]">
-      (x +
-      <span class="mx-1 inline-flex flex-col items-center align-middle leading-none">
-        <span class="border-b border-current px-1 text-[0.55em]">b</span>
-        <span class="px-1 text-[0.55em]">2</span>
-      </span>
-      )²
-    </span>
-    <span class="text-white"> - </span>
-    <span class="text-[#6bb6ff]">
-      (
-      <span class="mx-1 inline-flex flex-col items-center align-middle leading-none">
-        <span class="border-b border-current px-1 text-[0.55em]">b</span>
-        <span class="px-1 text-[0.55em]">2</span>
-      </span>
-      )²
-    </span>
+
+$$ \color{808080}\Rightarrow \color{ffffff}\left( x + \color{ff6b6b}3\color{ffffff}\right)  = \pm\sqrt{4} $$
+
+  </v-click>
+  <v-click>
+
+$$ \color{808080}\Rightarrow \color{ffffff}\left( x + \color{ff6b6b}3\color{ffffff}\right)  = \pm2 $$
+
+  </v-click>
+  <v-click>
+
+$$ \color{808080}\Rightarrow  \color{ffffff}x  = \pm2 -\color{ff6b6b}3\color{ffffff} $$
+
+  </v-click>
+  <v-click>
+    <div class="ml-10">よって</div>
+  </v-click>
+
+  <v-click>
+
+$$ \color{808080}\Rightarrow  \color{ffffff}x  = -1, -5 $$
+
+  </v-click>
+
+</div>
+<div class="flex items-center justify-center gap-4 text-3xl -mt-10">
+
+</div>
+
+---
+layout: two-cols-header
+---
+
+<div class="flex items-center gap-4  text-4xl -mt-10">
+  例：
+
+$$ \large ax^2 + \color{ff6b6b}b\color{ffffff}x+\color{6bb6ff}c\color{ffffff} = 0 　　(a \neq 0)$$
+
+</div>
+
+::left::
+<div class="-mt-10"> 
+  <v-click>
+
+$$　\color{808080}\Rightarrow \color{ffffff}x^2 + \frac{\color{ff6b6b}b}{a}x + \frac{\color{6bb6ff}c}{a} = 0 $$
+
+  </v-click>
+  <v-click>
+
+$$　\color{808080}\Rightarrow \color{ffffff}\left( x + \frac{\color{ff6b6b}b}{2a} \right)^2 - \left( \frac{\color{ff6b6b}b}{2a} \right)^2+\frac{\color{6bb6ff}c}{a}  = 0 $$
+
+  </v-click>
+  <v-click>
+
+$$　\color{808080}\Rightarrow \color{ffffff}\left( x + \frac{\color{ff6b6b}b}{2a} \right)^2 = \left( \frac{\color{ff6b6b}b}{2a} \right)^2 - \frac{\color{6bb6ff}c}{a} $$
+
+  </v-click>
+  <v-click>
+
+$$　\color{808080}\Rightarrow \color{ffffff}\left( x + \frac{\color{ff6b6b}b}{2a} \right)^2 = \left( \frac{\color{ff6b6b}b^2}{4a^2} \right) - \frac{\color{6bb6ff}c}{a} $$
+
   </v-click>
 </div>
 
-$$
-x^2 + bx \rightarrow \left( x + \frac{b}{2} \right)^2 - \left( \frac{b}{2} \right)^2
-$$
+::right::
+<div class="-mt-10"> 
+  <v-click>
 
-<p class="mt-8 text-center">平方完成の変形をクリックで順に確認しましょう。</p>
+$$　\color{808080}\Rightarrow \color{ffffff}\left( x + \frac{\color{ff6b6b}b}{2a} \right)^2 = \left( \frac{\color{ff6b6b}b\color{ffffff}^2 - 4a\color{6bb6ff}c}{4a^2} \right) $$
+
+  </v-click>
+  <v-click>
+
+$$　\color{808080}\Rightarrow \color{ffffff} x + \frac{\color{ff6b6b}b}{2a} = \frac{\pm\sqrt{\color{ff6b6b}b\color{ffffff}^2 - 4a\color{6bb6ff}c}}{2a} $$
+
+  </v-click>
+  <v-click>
+    <div class="ml-10">よって</div>
+  </v-click>
+
+  <v-click>
+
+$$　\color{808080}\Rightarrow \color{ffffff} x = \frac{-\color{ff6b6b}b\color{ffffff}\pm\sqrt{\color{ff6b6b}b\color{ffffff}^2 - 4a\color{6bb6ff}c}}{2a} $$
+
+  </v-click>
+
+
+</div>
 
 ---
 layout: default
@@ -196,37 +252,143 @@ $$
 * $D = 0$ ： 解は1つ（重解）
 * $D < 0$ ： 実数の解はない
 
----
-layout: center
-class: text-center
----
-
-# 演習問題にチャレンジ！
-
-1. $x^2 - 4 = 0$
-2. $x^2 - 6x + 9 = 0$
-3. $x^2 + 3x + 1 = 0$
-
-解法のプロセスを紙に書き出してみましょう
 
 ---
-layout: end
+layout: default
 ---
 
-ご清聴ありがとうございました！
+# 小テスト(1/10)
 
-### 使い方
+<br>
+<div class="ml-30 text-3xl space-y-4">
+  次の二次方程式の解を選択肢から１つ選びなさい。 
+</div>
+<br>
 
-1. **Slidevのインストール**: まだの場合は、以下のコマンドで環境を作成してください。
+$$ \huge x^2 = 0　$$
 
-```bash
-npm init slidev@latest
-```
+<br><br>
+<span class="choice-label ml-40">ア</span><span class="choice-item">解なし</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">０</span>　<span class="choice-label ml-5">ウ</span>　$\large±\sqrt{0}$　<span class="choice-label ml-5">エ</span>　$\large±0$
 
-2. **ファイルの作成**: プロジェクトフォルダ内の `slides.md` に上記のコードを貼り付けます。
+<div class="ml-85 text-3xl" style="color:yellow"> 
+  <v-click>
+    ＜正解＞　イ
+  </v-click>
+</div>
 
-3. **実行**:
+---
+layout: default
+---
 
-```bash
-npm run dev
-```
+# 小テスト(2/10)
+
+<br>
+<div class="ml-30 text-3xl space-y-4">
+  次の二次方程式の解を選択肢から１つ選びなさい。 
+</div>
+<br>
+
+$$ \huge x^2 = 256　$$
+
+<br><br>
+<span class="choice-label ml-40">ア</span><span class="choice-item">解なし</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">０</span>　<span class="choice-label ml-5">ウ</span>　$\large±\sqrt{16}$　<span class="choice-label ml-5">エ</span>　$\large±16$
+
+<div class="ml-85 text-3xl" style="color:yellow"> 
+  <v-click>
+    ＜正解＞　エ
+  </v-click>
+</div>
+
+
+---
+layout: default
+---
+
+# 小テスト(3/10)
+
+<br>
+<div class="ml-30 text-3xl space-y-4">
+  次の二次方程式の解を選択肢から１つ選びなさい。 
+</div>
+<br>
+
+$$ \huge x^2 + 16 = 0　$$
+
+<br><br>
+<span class="choice-label ml-40">ア</span><span class="choice-item">解なし</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">０</span>　<span class="choice-label ml-5">ウ</span>　$\large±\sqrt{4}$　<span class="choice-label ml-5">エ</span>　$\large±4$
+
+<div class="ml-85 text-3xl" style="color:yellow"> 
+  <v-click>
+    ＜正解＞　ア
+  </v-click>
+</div>
+
+---
+layout: default
+---
+
+# 小テスト(4/10)
+
+<br>
+<div class="ml-30 text-3xl space-y-4">
+  次の二次方程式の解を選択肢から１つ選びなさい。 
+</div>
+<br>
+
+$$ \huge x^2 + 3x = 0　$$
+
+<br><br>
+<span class="choice-label ml-20">ア</span><span class="choice-item">解なし</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">０, ３</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">０, ー３</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">０, ±３</span>
+
+<div class="ml-85 text-3xl" style="color:yellow"> 
+  <v-click>
+    ＜正解＞　ウ
+  </v-click>
+</div>
+
+---
+layout: default
+---
+
+# 小テスト(5/10)
+
+<br>
+<div class="ml-30 text-3xl space-y-4">
+  次の二次方程式の解を選択肢から１つ選びなさい。 
+</div>
+<br>
+
+$$ \huge (x-3)(x+1) = 0　$$
+
+<br><br>
+<span class="choice-label ml-10">ア</span><span class="choice-item">１, ３</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">ー１, ３</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">ー１, ３</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">ー１, ー３</span>
+
+<div class="ml-85 text-3xl" style="color:yellow"> 
+  <v-click>
+    ＜正解＞　イ
+  </v-click>
+</div>
+
+---
+layout: default
+---
+
+# 小テスト(6/10)
+
+<br>
+<div class="ml-30 text-3xl space-y-4">
+  次の二次方程式の解を選択肢から１つ選びなさい。 
+</div>
+<br>
+
+$$ \huge x^2+4x+4 = 0　$$
+
+<br><br>
+<span class="choice-label ml-40">ア</span><span class="choice-item">０</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">２</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">ー２</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">２, ー２</span>
+
+<div class="ml-85 text-3xl" style="color:yellow"> 
+  <v-click>
+    ＜正解＞　ウ
+  </v-click>
+</div>
+
