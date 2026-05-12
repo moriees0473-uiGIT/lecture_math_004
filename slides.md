@@ -354,6 +354,29 @@ layout: default
 </div>
 <br>
 
+$$ \huge x^2+2x+1 = 0　$$
+
+<br><br>
+<span class="choice-label ml-40">ア</span><span class="choice-item">０</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">１</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">ー１</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">１, ー１</span>
+
+<div class="ml-85 text-3xl" style="color:yellow"> 
+  <v-click>
+    ＜正解＞　ウ
+  </v-click>
+</div>
+
+---
+layout: default
+---
+
+# 小テスト(7/10)
+
+<br>
+<div class="ml-30 text-3xl space-y-4">
+  次の二次方程式の解を選択肢から１つ選びなさい。 
+</div>
+<br>
+
 $$ \huge x^2+4x+4 = 0　$$
 
 <br><br>
@@ -365,3 +388,71 @@ $$ \huge x^2+4x+4 = 0　$$
   </v-click>
 </div>
 
+---
+layout: default
+---
+
+# 小テスト(8/10)
+
+<br>
+<div class="ml-30 text-3xl space-y-4">
+  次の二次方程式の解を選択肢から１つ選びなさい。 
+</div>
+<br>
+
+$$ \huge x^2+6x+9 = 0　$$
+
+<br><br>
+<span class="choice-label ml-40">ア</span><span class="choice-item">０</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">３</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">ー３</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">３, ー３</span>
+
+<div class="ml-85 text-3xl" style="color:yellow"> 
+  <v-click>
+    ＜正解＞　ウ
+  </v-click>
+</div>
+
+---
+layout: default
+---
+
+# 小テスト(9/10)
+
+<br>
+<div class="ml-30 text-3xl space-y-4">
+  次の二次方程式の解を選択肢から１つ選びなさい。 
+</div>
+<br>
+
+$$ \huge x^2+2x = 3　$$
+
+<br><br>
+<span class="choice-label ml-40">ア</span><span class="choice-item">０</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">１</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">ー３</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">１, ー３</span>
+
+<div class="ml-85 text-3xl" style="color:yellow"> 
+  <v-click>
+    ＜正解＞　ウ
+  </v-click>
+</div>
+
+---
+layout: default
+---
+
+# 小テスト(10/10)
+
+<br>
+<div class="ml-30 text-3xl space-y-4">
+  二次方程式の解の<ruby>公式<rt>こうしき</rt></ruby>を答えなさい。 
+</div>
+<br>
+
+$$ \large ax^2 + \color{ff6b6b}b\color{ffffff}x+\color{6bb6ff}c\color{ffffff} = 0 　　(a \neq 0)$$
+
+<div class="ml-5 text-3xl" style="color:yellow"> 
+  <v-click>
+    ＜正解＞　
+
+$$　x = \frac{-\color{ff6b6b}b\color{ffffff}\pm\sqrt{\color{ff6b6b}b\color{ffffff}^2 - 4a\color{6bb6ff}c}}{2a} $$
+
+  </v-click>
+</div>
