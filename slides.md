@@ -430,7 +430,7 @@ $$ \huge x^2+2x = 3　$$
 
 <div class="ml-85 text-3xl" style="color:yellow"> 
   <v-click>
-    ＜正解＞　ウ
+    ＜正解＞　エ
   </v-click>
 </div>
 
