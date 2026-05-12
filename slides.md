@@ -77,7 +77,7 @@ $$
 
   1. <ruby>定数項<rt>ていすうこう</rt></ruby>を<ruby>右辺<rt>うへん</rt></ruby>に<ruby>移項<rt>いこう</rt></ruby>する
  
-  2. <ruby>左辺<rt>さへん</rt></ruby>を $(x+p)^2$ の<ruby>形<rt>かたち</rt></ruby>にする（<ruby>平方完成<rt>へいほうかんせい</rt></ruby>）
+  2. <ruby>左辺<rt>さへん</rt></ruby>を $(x+p)^2$ の<ruby>形<rt>かたち</rt></ruby>にする（<ruby>平方完成<rt>へいほうかんせい</rt></ruby>）→　<ruby>四角<rt>しかく</rt></ruby>にする
 
   3. <ruby>両辺<rt>りょうへん</rt></ruby>の<ruby>平方根<rt>へいほうこん</rt></ruby>をとる
 
@@ -213,7 +213,7 @@ $$　\color{808080}\Rightarrow \color{ffffff} x = \frac{-\color{ff6b6b}b\color{f
 
 # 4. 究極の武器：解の公式
 
-どんな2次方程式でも、これに代入すれば必ず解けます。
+どんな<ruby>二次方程式<rt>にじ　ほうていしき</rt></ruby>でも、これに<ruby>代入<rt>だいにゅう</rt></ruby>すれば<ruby>必<rt>かなら</rt></ruby>ず<ruby>解<rt>と</rt></ruby>けます。
 
 $$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
@@ -221,9 +221,9 @@ $$
 
 ### 判別式 $D = b^2 - 4ac$
 
-* $D > 0$ ： 解は2つ
-* $D = 0$ ： 解は1つ（重解）
-* $D < 0$ ： 実数の解はない
+* $D > 0$ ： <ruby>解<rt>かい</rt></ruby>は2つ
+* $D = 0$ ： <ruby>解<rt>かい</rt></ruby>は1つ（<ruby>重解<rt>じゅうかい</rt></ruby>）
+* $D < 0$ ： <ruby>実数<rt>じっすう</rt></ruby>の<ruby>解<rt>かい</rt></ruby>はない
 
 
 ---
