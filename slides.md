@@ -1,11 +1,11 @@
 ---
 theme: seriph
-# background: https://images.pexels.com/photos/6238050/pexels-photo-6238050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920
-#background: /bg.png
+background: https://images.pexels.com/photos/6238050/pexels-photo-6238050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920
+# background: /bg.png
 class: text-center
 # colorSchema options:
-# colorSchema: light
-colorSchema: dark
+colorSchema: light
+# colorSchema: dark
 highlighter: shiki
 lineNumbers: true
 drawings:
@@ -38,7 +38,7 @@ layout: default
 -->
 
 $$
-x^2 + \color{ff6b6b}b\color{ffffff}x+\color{6bb6ff}c　　 \color{ffffff}\rightarrow　　 \left( x + \frac{\color{ff6b6b}b}{2} \right)^2 - \left( \frac{\color{ff6b6b}b}{2} \right)^2+\color{6bb6ff}c
+x^2 + \color{ff6b6b}b\color{black}x+\color{6bb6ff}c　　 \color{black}\rightarrow　　 \left( x + \frac{\color{ff6b6b}b}{2} \right)^2 - \left( \frac{\color{ff6b6b}b}{2} \right)^2+\color{6bb6ff}c
 $$
 
   <div class="flex items-center gap-2">
@@ -47,15 +47,15 @@ $$
   </div>
 
 $$
-x^2 + (\color{ff6b6b}p\color{ffffff}+\color{6bb6ff}q\color{ffffff})x + \color{ff6b6b}p\color{6bb6ff}q \color{ffffff}= 0　　\rightarrow　　(x+\color{ff6b6b}p\color{ffffff})(x+\color{6bb6ff}q\color{ffffff}) = 0
+x^2 + (\color{ff6b6b}p\color{black}+\color{6bb6ff}q\color{black})x + \color{ff6b6b}p\color{6bb6ff}q \color{black}= 0　　\rightarrow　　(x+\color{ff6b6b}p\color{black})(x+\color{6bb6ff}q\color{black}) = 0
 $$
 
 $$
-x^2 + 2\color{ff6b6b}b\color{ffffff}x + \color{ff6b6b}b\color{ffffff}^2 = 0　　\rightarrow　　(x+\color{ff6b6b}b\color{ffffff})^2 = 0
+x^2 + 2\color{ff6b6b}b\color{black}x + \color{ff6b6b}b\color{black}^2 = 0　　\rightarrow　　(x+\color{ff6b6b}b\color{black})^2 = 0
 $$
 
-$$
-x^2 - 2\color{ff6b6b}b\color{ffffff}x +\color{ff6b6b} b\color{ffffff}^2 = 0　　\rightarrow　　(x-\color{ff6b6b}b\color{ffffff})^2 = 0
+$$black
+x^2 - 2\color{ff6b6b}b\color{black}x +\color{ff6b6b} b\color{black}^2 = 0　　\rightarrow　　(x-\color{ff6b6b}b\color{black})^2 = 0
 $$
 
 </div>
@@ -69,7 +69,7 @@ layout: default
 <ruby>因数分解<rt>いんすうぶんかい</rt></ruby>が<ruby>難<rt>むずか</rt></ruby>しい場合、<ruby>平方<rt>へいほう</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ります。
 
 $$
-x^2 + \color{ff6b6b}b\color{ffffff}x+\color{6bb6ff}c \color{ffffff} = 0　 \color{ffffff}\rightarrow　　 \left( x + \frac{\color{ff6b6b}b}{2} \right)^2 - \left( \frac{\color{ff6b6b}b}{2} \right)^2+\color{6bb6ff}c \color{ffffff} = 0
+x^2 + \color{ff6b6b}b\color{black}x+\color{6bb6ff}c \color{black} = 0　 \color{ffffblackff}\rightarrow　　 \left( x + \frac{\color{ff6b6b}b}{2} \right)^2 - \left( \frac{\color{ff6b6b}b}{2} \right)^2+\color{6bb6ff}c \color{black} = 0
 $$
 
 ### <ruby>手順<rt>てじゅん</rt></ruby>：
@@ -88,31 +88,29 @@ layout: two-cols-header
 <div class="flex items-center gap-4  text-4xl -mt-10">
   例：
 
-$$ \large x^2 + \color{ff6b6b}6\color{ffffff}x+\color{6bb6ff}5\color{ffffff} = 0 $$
-$$ \large x^2 + \color{ff6b6b}{6}\,x+\color{6bb6ff}5\color{ffffff} = 0 $$
-$$ \large x^2 + \color{ff6b6b}{6x}+\color{6bb6ff}5\color{ffffff} = 0 $$
+$$ \large x^2 + \color{ff6b6b}{6x}+\color{6bb6ff}5\color{black} = 0 $$
 </div>
 
 ::left::
 <div class="-mt-40"> 
   <v-click>
 
-$$　\color{808080}\Rightarrow \color{ffffff}\left( x + \frac{\color{ff6b6b}6}{2} \right)^2 - \left( \frac{\color{ff6b6b}6}{2} \right)^2+\color{6bb6ff}5\color{ffffff} = 0 $$
+$$　\color{808080}\Rightarrow \color{black}\left( x + \frac{\color{ff6b6b}6}{2} \right)^2 - \left( \frac{\color{ff6b6b}6}{2} \right)^2+\color{6bb6ff}5\color{black} = 0 $$
 
   </v-click>
   <v-click>
 
-$$ \color{808080}\Rightarrow \color{ffffff}\left( x + \color{ff6b6b}3\color{ffffff}\right)^2  - \left(\color{ff6b6b}3\color{ffffff}\right)^2 + \color{6bb6ff}5\color{ffffff} = 0 $$
+$$ \color{808080}\Rightarrow \color{black}\left( x + \color{ff6b6b}3\color{black}\right)^2  - \left(\color{ff6b6b}3\color{black}\right)^2 + \color{6bb6ff}5\color{black} = 0 $$
 
    </v-click>
   <v-click>
 
-$$ \color{808080}\Rightarrow \color{ffffff}\left( x + \color{ff6b6b}3\color{ffffff}\right)^2  - \color{ff6b6b}9\color{ffffff} + \color{6bb6ff}5\color{ffffff} = 0 $$
+$$ \color{808080}\Rightarrow \color{black}\left( x + \color{ff6b6b}3\color{black}\right)^2  - \color{ff6b6b}9\color{black} + \color{6bb6ff}5\color{black} = 0 $$
 
    </v-click>
   <v-click>
 
-$$ \color{808080}\Rightarrow \color{ffffff}\left( x + \color{ff6b6b}3\color{ffffff}\right)^2  = 4 $$
+$$ \color{808080}\Rightarrow \color{black}\left( x + \color{ff6b6b}3\color{black}\right)^2  = 4 $$
 
    </v-click>
 
@@ -122,17 +120,17 @@ $$ \color{808080}\Rightarrow \color{ffffff}\left( x + \color{ff6b6b}3\color{ffff
 <div class="-mt-40"> 
   <v-click>
 
-$$ \color{808080}\Rightarrow \color{ffffff}\left( x + \color{ff6b6b}3\color{ffffff}\right)  = \pm\sqrt{4} $$
+$$ \color{808080}\Rightarrow \color{black}\left( x + \color{ff6b6b}3\color{black}\right)  = \pm\sqrt{4} $$
 
   </v-click>
   <v-click>
 
-$$ \color{808080}\Rightarrow \color{ffffff}\left( x + \color{ff6b6b}3\color{ffffff}\right)  = \pm2 $$
+$$ \color{808080}\Rightarrow \color{black}\left( x + \color{ff6b6b}3\color{black}\right)  = \pm2 $$
 
   </v-click>
   <v-click>
 
-$$ \color{808080}\Rightarrow  \color{ffffff}x  = \pm2 -\color{ff6b6b}3\color{ffffff} $$
+$$ \color{808080}\Rightarrow  \color{black}x  = \pm2 -\color{ff6b6b}3\color{black} $$
 
   </v-click>
   <v-click>
@@ -141,7 +139,7 @@ $$ \color{808080}\Rightarrow  \color{ffffff}x  = \pm2 -\color{ff6b6b}3\color{fff
 
   <v-click>
 
-$$ \color{808080}\Rightarrow  \color{ffffff}x  = -1, -5 $$
+$$ \color{808080}\Rightarrow  \color{black}x  = -1, -5 $$
 
   </v-click>
 
@@ -157,7 +155,7 @@ layout: two-cols-header
 <div class="flex items-center gap-4  text-4xl -mt-10">
   例：
 
-$$ \large ax^2 + \color{ff6b6b}b\color{ffffff}x+\color{6bb6ff}c\color{ffffff} = 0 　　(a \neq 0)$$
+$$ \large ax^2 + \color{ff6b6b}b\color{black}x+\color{6bb6ff}c\color{black} = 0 　　(a \neq 0)$$
 
 </div>
 
@@ -165,22 +163,22 @@ $$ \large ax^2 + \color{ff6b6b}b\color{ffffff}x+\color{6bb6ff}c\color{ffffff} = 
 <div class="-mt-10"> 
   <v-click>
 
-$$　\color{808080}\Rightarrow \color{ffffff}x^2 + \frac{\color{ff6b6b}b}{a}x + \frac{\color{6bb6ff}c}{a} = 0 $$
+$$　\color{808080}\Rightarrow \color{black}x^2 + \frac{\color{ff6b6b}b}{a}x + \frac{\color{6bb6ff}c}{a} = 0 $$
 
   </v-click>
   <v-click>
 
-$$　\color{808080}\Rightarrow \color{ffffff}\left( x + \frac{\color{ff6b6b}b}{2a} \right)^2 - \left( \frac{\color{ff6b6b}b}{2a} \right)^2+\frac{\color{6bb6ff}c}{a}  = 0 $$
+$$　\color{808080}\Rightarrow \color{black}\left( x + \frac{\color{ff6b6b}b}{2a} \right)^2 - \left( \frac{\color{ff6b6b}b}{2a} \right)^2+\frac{\color{6bb6ff}c}{a}  = 0 $$
 
   </v-click>
   <v-click>
 
-$$　\color{808080}\Rightarrow \color{ffffff}\left( x + \frac{\color{ff6b6b}b}{2a} \right)^2 = \left( \frac{\color{ff6b6b}b}{2a} \right)^2 - \frac{\color{6bb6ff}c}{a} $$
+$$　\color{808080}\Rightarrow \color{black}\left( x + \frac{\color{ff6b6b}b}{2a} \right)^2 = \left( \frac{\color{ff6b6b}b}{2a} \right)^2 - \frac{\color{6bb6ff}c}{a} $$
 
   </v-click>
   <v-click>
 
-$$　\color{808080}\Rightarrow \color{ffffff}\left( x + \frac{\color{ff6b6b}b}{2a} \right)^2 = \left( \frac{\color{ff6b6b}b^2}{4a^2} \right) - \frac{\color{6bb6ff}c}{a} $$
+$$　\color{808080}\Rightarrow \color{black}\left( x + \frac{\color{ff6b6b}b}{2a} \right)^2 = \left( \frac{\color{ff6b6b}b^2}{4a^2} \right) - \frac{\color{6bb6ff}c}{a} $$
 
   </v-click>
 </div>
@@ -189,12 +187,12 @@ $$　\color{808080}\Rightarrow \color{ffffff}\left( x + \frac{\color{ff6b6b}b}{2
 <div class="-mt-10"> 
   <v-click>
 
-$$　\color{808080}\Rightarrow \color{ffffff}\left( x + \frac{\color{ff6b6b}b}{2a} \right)^2 = \left( \frac{\color{ff6b6b}b\color{ffffff}^2 - 4a\color{6bb6ff}c}{4a^2} \right) $$
+$$　\color{808080}\Rightarrow \color{black}\left( x + \frac{\color{ff6b6b}b}{2a} \right)^2 = \left( \frac{\color{ff6b6b}b\color{black}^2 - 4a\color{6bb6ff}c}{4a^2} \right) $$
 
   </v-click>
   <v-click>
 
-$$　\color{808080}\Rightarrow \color{ffffff} x + \frac{\color{ff6b6b}b}{2a} = \frac{\pm\sqrt{\color{ff6b6b}b\color{ffffff}^2 - 4a\color{6bb6ff}c}}{2a} $$
+$$　\color{808080}\Rightarrow \color{black} x + \frac{\color{ff6b6b}b}{2a} = \frac{\pm\sqrt{\color{ff6b6b}b\color{black}^2 - 4a\color{6bb6ff}c}}{2a} $$
 
   </v-click>
   <v-click>
@@ -203,7 +201,7 @@ $$　\color{808080}\Rightarrow \color{ffffff} x + \frac{\color{ff6b6b}b}{2a} = \
 
   <v-click>
 
-$$　\color{808080}\Rightarrow \color{ffffff} x = \frac{-\color{ff6b6b}b\color{ffffff}\pm\sqrt{\color{ff6b6b}b\color{ffffff}^2 - 4a\color{6bb6ff}c}}{2a} $$
+$$　\color{808080}\Rightarrow \color{black} x = \frac{-\color{ff6b6b}b\color{black}\pm\sqrt{\color{ff6b6b}b\color{black}^2 - 4a\color{6bb6ff}c}}{2a} $$
 
   </v-click>
 
@@ -212,7 +210,7 @@ $$　\color{808080}\Rightarrow \color{ffffff} x = \frac{-\color{ff6b6b}b\color{f
 
 ---
 
-# 4. 究極の武器：解の公式
+# 究極の武器：解の公式
 
 どんな<ruby>二次方程式<rt>にじ　ほうていしき</rt></ruby>でも、これに<ruby>代入<rt>だいにゅう</rt></ruby>すれば<ruby>必<rt>かなら</rt></ruby>ず<ruby>解<rt>と</rt></ruby>けます。
 
@@ -244,7 +242,7 @@ $$ \huge x^2 = 0　$$
 <br><br>
 <span class="choice-label ml-40">ア</span><span class="choice-item">解なし</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">０</span>　<span class="choice-label ml-5">ウ</span>　$\large±\sqrt{0}$　<span class="choice-label ml-5">エ</span>　$\large±0$
 
-<div class="ml-85 text-3xl" style="color:yellow"> 
+<div class="ml-85 text-3xl" style="color:orange; font-weight:bold;"> 
   <v-click>
     ＜正解＞　イ
   </v-click>
@@ -267,7 +265,7 @@ $$ \huge x^2 = 256　$$
 <br><br>
 <span class="choice-label ml-40">ア</span><span class="choice-item">解なし</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">０</span>　<span class="choice-label ml-5">ウ</span>　$\large±\sqrt{16}$　<span class="choice-label ml-5">エ</span>　$\large±16$
 
-<div class="ml-85 text-3xl" style="color:yellow"> 
+<div class="ml-85 text-3xl" style="color:orange; font-weight: bold; "> 
   <v-click>
     ＜正解＞　エ
   </v-click>
@@ -291,7 +289,7 @@ $$ \huge x^2 + 16 = 0　$$
 <br><br>
 <span class="choice-label ml-40">ア</span><span class="choice-item">解なし</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">０</span>　<span class="choice-label ml-5">ウ</span>　$\large±\sqrt{4}$　<span class="choice-label ml-5">エ</span>　$\large±4$
 
-<div class="ml-85 text-3xl" style="color:yellow"> 
+<div class="ml-85 text-3xl" style="color:orange; font-weight: bold; "> 
   <v-click>
     ＜正解＞　ア
   </v-click>
@@ -314,7 +312,7 @@ $$ \huge x^2 + 3x = 0　$$
 <br><br>
 <span class="choice-label ml-20">ア</span><span class="choice-item">解なし</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">０, ３</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">０, ー３</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">０, ±３</span>
 
-<div class="ml-85 text-3xl" style="color:yellow"> 
+<div class="ml-85 text-3xl" style="color:orange; font-weight: bold; "> 
   <v-click>
     ＜正解＞　ウ
   </v-click>
@@ -337,7 +335,7 @@ $$ \huge (x-3)(x+1) = 0　$$
 <br><br>
 <span class="choice-label ml-10">ア</span><span class="choice-item">１, ３</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">ー１, ３</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">１, ー３</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">ー１, ー３</span>
 
-<div class="ml-85 text-3xl" style="color:yellow"> 
+<div class="ml-85 text-3xl" style="color:orange; font-weight: bold; "> 
   <v-click>
     ＜正解＞　イ
   </v-click>
@@ -360,7 +358,7 @@ $$ \huge x^2+2x+1 = 0　$$
 <br><br>
 <span class="choice-label ml-40">ア</span><span class="choice-item">０</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">１</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">ー１</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">１, ー１</span>
 
-<div class="ml-85 text-3xl" style="color:yellow"> 
+<div class="ml-85 text-3xl" style="color:orange; font-weight: bold; "> 
   <v-click>
     ＜正解＞　ウ
   </v-click>
@@ -383,7 +381,7 @@ $$ \huge x^2+4x+4 = 0　$$
 <br><br>
 <span class="choice-label ml-40">ア</span><span class="choice-item">０</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">２</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">ー２</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">２, ー２</span>
 
-<div class="ml-85 text-3xl" style="color:yellow"> 
+<div class="ml-85 text-3xl" style="color:orange; font-weight: bold; "> 
   <v-click>
     ＜正解＞　ウ
   </v-click>
@@ -406,7 +404,7 @@ $$ \huge x^2+6x+9 = 0　$$
 <br><br>
 <span class="choice-label ml-40">ア</span><span class="choice-item">０</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">３</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">ー３</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">３, ー３</span>
 
-<div class="ml-85 text-3xl" style="color:yellow"> 
+<div class="ml-85 text-3xl" style="color:orange; font-weight: bold; "> 
   <v-click>
     ＜正解＞　ウ
   </v-click>
@@ -429,7 +427,7 @@ $$ \huge x^2+2x = 3　$$
 <br><br>
 <span class="choice-label ml-40">ア</span><span class="choice-item">０</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">１</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">ー３</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">１, ー３</span>
 
-<div class="ml-85 text-3xl" style="color:yellow"> 
+<div class="ml-85 text-3xl" style="color:orange; font-weight: bold; "> 
   <v-click>
     ＜正解＞　エ
   </v-click>
@@ -447,13 +445,13 @@ layout: default
 </div>
 <br>
 
-$$ \large ax^2 + \color{ff6b6b}b\color{ffffff}x+\color{6bb6ff}c\color{ffffff} = 0 　　(a \neq 0)$$
+$$ \large ax^2 + \color{ff6b6b}b\color{black}x+\color{6bb6ff}c\color{black} = 0 　　(a \neq 0)$$
 
-<div class="ml-5 text-3xl" style="color:yellow"> 
+<div class="ml-5 text-3xl" style="color:orenge"> 
   <v-click>
     ＜正解＞　
 
-$$　x = \frac{-\color{ff6b6b}b\color{ffffff}\pm\sqrt{\color{ff6b6b}b\color{ffffff}^2 - 4a\color{6bb6ff}c}}{2a} $$
+$$　x = \frac{-\color{ff6b6b}b\color{black}\pm\sqrt{\color{ff6b6b}b\color{black}^2 - 4a\color{6bb6ff}c}}{2a} $$
 
   </v-click>
 </div>
