@@ -1,7 +1,7 @@
 ---
 theme: seriph
 # background: https://images.pexels.com/photos/6238050/pexels-photo-6238050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920
-background: /bg.png
+#background: /bg.png
 class: text-center
 # colorSchema options:
 # colorSchema: light
@@ -89,7 +89,8 @@ layout: two-cols-header
   例：
 
 $$ \large x^2 + \color{ff6b6b}6\color{ffffff}x+\color{6bb6ff}5\color{ffffff} = 0 $$
-
+$$ \large x^2 + \color{ff6b6b}{6}\,x+\color{6bb6ff}5\color{ffffff} = 0 $$
+$$ \large x^2 + \color{ff6b6b}{6x}+\color{6bb6ff}5\color{ffffff} = 0 $$
 </div>
 
 ::left::
@@ -334,7 +335,7 @@ layout: default
 $$ \huge (x-3)(x+1) = 0　$$
 
 <br><br>
-<span class="choice-label ml-10">ア</span><span class="choice-item">１, ３</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">ー１, ３</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">ー１, ３</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">ー１, ー３</span>
+<span class="choice-label ml-10">ア</span><span class="choice-item">１, ３</span>　<span class="choice-label ml-5">イ</span><span class="choice-item">ー１, ３</span>　<span class="choice-label ml-5">ウ</span> <span class="choice-item">１, ー３</span>　<span class="choice-label ml-5">エ</span> <span class="choice-item">ー１, ー３</span>
 
 <div class="ml-85 text-3xl" style="color:yellow"> 
   <v-click>
